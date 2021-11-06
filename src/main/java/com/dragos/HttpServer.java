@@ -107,7 +107,7 @@ public class HttpServer extends Thread {
         try {
 
             ss = new ServerSocket(PORT);
-            System.out.println("Server started.");
+            System.out.println("Socket connection created.");
 
             try {
                 while (true) {
