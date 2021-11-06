@@ -53,7 +53,7 @@ public class HttpServer extends Thread {
 
     }
 
-    private String ignoreSpaces(String fileReq) {
+    private String parseSpaces(String fileReq) {
 
         if (fileReq.contains("%20")) {
 
@@ -170,7 +170,7 @@ public class HttpServer extends Thread {
 
             StringTokenizer tokens = new StringTokenizer(inputLine);
             String method = tokens.nextToken().toUpperCase();
-            fileReq = ignoreSpaces(tokens.nextToken().toLowerCase());
+            fileReq = parseSpaces(tokens.nextToken().toLowerCase());
 
             if (method.equals("GET")) { //GET method -> return content
 
