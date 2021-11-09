@@ -23,7 +23,7 @@ public class HttpServer extends Thread {
 
     private static String foundPath = "";
 
-    private String getContentType(String fileReq) {
+    public String getContentType(String fileReq) {
 
         if(fileReq.endsWith(".htm") || fileReq.endsWith(".html"))
             return "text/html";
@@ -53,7 +53,7 @@ public class HttpServer extends Thread {
 
     }
 
-    private String parseSpaces(String fileReq) {
+    public String parseSpaces(String fileReq) {
 
         if (fileReq.contains("%20")) {
 
@@ -79,7 +79,7 @@ public class HttpServer extends Thread {
         );
     }
 
-    private byte[] readFileData(File file, int fileLength) throws IOException {
+    public byte[] readFileData(File file, int fileLength) throws IOException {
 
         System.out.println("File: " + file);
         FileInputStream fileIn = null;
@@ -100,8 +100,6 @@ public class HttpServer extends Thread {
         return fileData;
 
     }
-
-
 
     public HttpServer(Socket clientSocet) {
 
