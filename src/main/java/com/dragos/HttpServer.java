@@ -238,7 +238,6 @@ public class HttpServer implements Runnable {
             } catch (IOException ioException) {
                 ioException.printStackTrace();
             }
-            System.out.println("Error reading : " + file);
         }
 
         if (hearderOut != null) {         //send Header
