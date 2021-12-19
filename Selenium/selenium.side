@@ -1,0 +1,370 @@
+{
+  "id": "6dbeb322-daab-46e3-9fc8-6e4458172393",
+  "version": "2.0",
+  "name": "httpServer",
+  "url": "http://localhost:8080/not_supported.html",
+  "tests": [{
+    "id": "32c8917a-c871-4d46-a11f-fe46be1bc085",
+    "name": "TestNotFoundPage",
+    "commands": [{
+      "id": "263caddb-96fd-4a48-92ac-8f92736d2db2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/404_not_found.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb236ae8-83c9-4f0a-9174-3ff7c6629982",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "882x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbe5fc77-e63b-445b-b27b-6d4c780340a0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HOME PAGE",
+      "targets": [
+        ["linkText=HOME PAGE", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'HOME PAGE')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fb972ad-264b-442d-b217-06c813463f87",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "66922414-1591-4ca0-ab46-77c36102ad61",
+    "name": "TestIndexPage",
+    "commands": [{
+      "id": "f30ad248-dcc5-492c-a0b4-546bd59626ac",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1c8ecbd-8226-4d5a-8328-5c76894aecc8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "882x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "757621dd-4d3e-46f3-aba3-11524a9e4253",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=***** /X.html",
+      "targets": [
+        ["linkText=***** /X.html", "linkText"],
+        ["css=tr:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'***** /X.html')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/X.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'***** /X.html')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cbe54e2-6551-4792-8d06-5174942295d4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HOME PAGE",
+      "targets": [
+        ["linkText=HOME PAGE", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'HOME PAGE')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e91b25a2-91b9-4ee6-80c3-7435edd90c26",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "24cd565e-962d-433f-87f2-0d26abdcbd7b",
+    "name": "TestMaintenancePage",
+    "commands": [{
+      "id": "71d30f2b-0de9-4e7c-9948-b91c3e093e77",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/maintenance.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "237b6efc-7e9d-4955-ba16-955f5fc8dd61",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "882x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "527f2d67-6f71-42fe-86e5-5fb45572e35d",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "895ccb8c-70b8-41e3-8700-2844e0b7c59d",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "620a55ea-10c7-42fd-992c-67a857d78874",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2efb42a2-ffb6-49dc-b82b-eccd18c915f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f4739dd-18b1-45db-ae23-7c0f9679d41e",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "12b508e8-2a5e-47c7-b1d3-317f822bdc51",
+    "name": "TestPageWithSpaces",
+    "commands": [{
+      "id": "53913602-064d-4ece-a856-d8a9fbc93f47",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/X%20Y.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1204f9df-441a-4253-b219-f36dcc59f01e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "882x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04466c36-4fcb-469e-88d6-8ae5fbbdd544",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cb64ab5-3dff-43fe-ad3a-9d06541a3ca1",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4431afc-2bed-49de-b56a-0a4ae8887e5d",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e528394a-c01a-4542-9080-49b44dae3cf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c9105c9d-a9e3-4cc9-94fd-8f12a10fc676",
+    "name": "TestGeneralAbsoluteLink",
+    "commands": [{
+      "id": "4742e97c-9238-4c65-887d-268e40e72773",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Path1/Path2/X.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0dd9a6a4-a715-4b7a-b160-b01896c5e7ab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "882x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a15c6aa5-adcf-4ce3-8f51-17a63b393b0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1472a16b-0169-4649-99e4-05d4927bbcfd",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d8883fc4-c2ae-4cf2-bac7-33481867cbc6",
+    "name": "TestSimpleRelativeLink",
+    "commands": [{
+      "id": "b6ca1b31-690f-4420-a8e5-9c4de797052d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Y.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d27be18-40f4-4837-8de7-25b6e501cf9f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "882x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef552b3c-dc6a-44c5-9f06-2ca42ed3571a",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d14eb48e-c1eb-463d-8825-32e46a449ee8",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'HOME PAGE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7a5bd666-50e4-4e11-9c2e-b7ceaedb94ad",
+    "name": "TestNotSupportedMethod",
+    "commands": [{
+      "id": "1f420b63-cdd8-4a65-80e4-1bf394913f02",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/not_supported.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "831e26c3-b9b1-4311-a7bf-a4b7015c3ec4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "882x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05a5fefe-b1d5-4758-8dcf-6128212e0190",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'Method not supported.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b81dad2c-cf68-418b-b1b4-bab07ce6d63b",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'Method not supported.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9a14524-76ed-4f53-b749-6008f2208084",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'Method not supported.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a85c7fd6-8627-4f9a-bce5-d4249b38e902",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["localhost:8080", "http://localhost:8080/index.html", "http://localhost:8080/", "http://localhost:8080/404_not_found.html", "http://localhost:8080/maintenance.html", "http://localhost:8080/X%20Y.html", "http://localhost:8080/Path1/Path2/X.html", "http://localhost:8080/Y.html", "http://localhost:8080/not_supported.html"],
+  "plugins": []
+}
