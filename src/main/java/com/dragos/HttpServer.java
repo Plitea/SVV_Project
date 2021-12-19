@@ -18,7 +18,7 @@ import java.net.Socket;
 import java.net.URLDecoder;
 
 
-public class HttpServer implements Runnable {
+public class HttpServer extends Thread implements Runnable {
 
     protected Socket cs;    //client socket
     static ServerSocket ss;   //server socket
@@ -32,16 +32,32 @@ public class HttpServer implements Runnable {
     static int serverPort = 0;
     public int conection;
     static int status = 0;
+    public static boolean serverIsOpen = true;
+    public static boolean serverIsRunning = false;
+
+    public static void setServerIsRunning(boolean value) {
+
+        serverIsRunning = value;
+    }
 
     public int getStateServer() {
+
         return status;
     }
 
     public void setClientSocket(Socket clientSocket) {
+
         this.cs = clientSocket;
     }
 
-    public boolean setPort(int portNr) {
+    public HttpServer(){}
+
+    public HttpServer(Socket socket) {
+        cs = socket;
+        start();
+    }
+
+    public static boolean setPort(int portNr) {
         try (ServerSocket ignored = new ServerSocket(portNr)) {
             serverPort = portNr;
             return true;
@@ -50,7 +66,7 @@ public class HttpServer implements Runnable {
         }
     }
 
-    public void setState(int state) {
+    public static void setState(int state) {
         status = state;
     }
 
@@ -104,7 +120,7 @@ public class HttpServer implements Runnable {
     }
 
 
-    public boolean acceptServerPort() {
+    public static boolean acceptServerPort() {
         try{
 
             if(serverPort < 8000 || serverPort > 10500) {
@@ -260,6 +276,25 @@ public class HttpServer implements Runnable {
             bodyOut.flush();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public synchronized static void setServerSocket(int port) throws IllegalArgumentException {
+        if(port < 8000 || port > 10500)
+            throw new IllegalArgumentException();
+        if(ss != null) {
+            try {
+                ss.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.exit(-1);
+            }
+        }
+        try {
+            ss = new ServerSocket(port);
+        } catch (IOException e) {
+            System.err.println("Could not listen on port: " + serverPort);
+            System.exit(-1);
         }
     }
 
